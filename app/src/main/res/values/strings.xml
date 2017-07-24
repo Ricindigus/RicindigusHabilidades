@@ -183,9 +183,9 @@
     <string name="modulo1_pregunta12_subpregunta7">Manzana</string>
     <string name="modulo1_pregunta12_subpregunta8">Lote</string>
     <string name="modulo1_pregunta12_subpregunta9">Km.</string>
-    <string name="modulo1_pregunta12_subpregunta10">Distrito</string>
+    <string name="modulo1_pregunta12_subpregunta10">Departamento</string>
     <string name="modulo1_pregunta12_subpregunta11">Provincia</string>
-    <string name="modulo1_pregunta12_subpregunta12">Departamento</string>
+    <string name="modulo1_pregunta12_subpregunta12">Distrito</string>
 
 
     <!--MODULO 2-->
@@ -303,7 +303,7 @@
 
     <string name="mod2_p20">20. De acuerdo a su experiencia, ¿cuál de las siguientes políticas o programas podrían ayudar a incrementar el número de contratos permanentes?                                                                                                                          </string>
     <string name="mod2_p20_1">(En la primera columna marque todas las opciones que apliquen. Anote 1, 2 o 3 en la segunda columna, según el orden de importancia de las opciones seleccionadas.)</string>
-    <string name="mod2_p20_sp1">1.programas de capacitación</string>
+    <string name="mod2_p20_sp1">1.Programas de capacitación</string>
     <string name="mod2_p20_sp2">2.Reducción de costos no salariales (vacaciones seguro, pensiones, etc) </string>
     <string name="mod2_p20_sp3">3.Reducción de costos salariales (gratificaciones, CTS, etc)</string>
     <string name="mod2_p20_sp4">4.Subsidios a las contrataciones</string>
@@ -481,13 +481,13 @@
     <string name="mod5_p1_sp1">1.Gerentes</string>
     <string name="mod5_p1_sp1_desc">Los gerentes participan en la planificación, dirección y coordinación de las actividades generales de empresas,
         gobiernos y otras organizaciones. Se trata de trabajos de alto nivel y altamente especializados</string>
-    <string name="mod5_p1_sp2">2.profesionales</string>
+    <string name="mod5_p1_sp2">2.Profesionales</string>
     <string name="mod5_p1_sp2_desc">Los profesionales son empleados altamente calificados que ofrecen a las organizaciones una gama de servicios de conocimiento especializado.
         Incluyen profesionales de la tecnología e información, contadores, químicos e investigadores científicos, economistas, arquitectos, actuarios, doctores, ingenieros, etc.</string>
     <string name="mod5_p1_sp3">3.Técnicos y profesionales de nivel medio</string>
     <string name="mod5_p1_sp3_desc">Los profesionales de nivel medio llevan a cabo la mayoría de las tareas técnicas y relacionadas que se vinculan a las investigaciones y la aplicación de conceptos y métodos operativos,
         científicos o artísticos. Como ejemplo de ellos se incluye a técnicos delas ciencias y la ingeniería, técnicos de laboratorio, técnico de la tecnología e información, técnicos de contabilidad, etc.</string>
-    <string name="mod5_p1_sp4">4.personal de apoyo administrativo</string>
+    <string name="mod5_p1_sp4">4.Personal de apoyo administrativo</string>
     <string name="mod5_p1_sp4_desc">El personal de apoyo administrativo registra, organiza, almacena, calcula y recupera información administrativa,
         y lleva a cabo una serie de tareas administrativas, como oficinistas, secretarias, etc.</string>
     <string name="mod5_p1_sp5">5.Personal de servicios y vendedores</string>
@@ -706,30 +706,30 @@
     <string name="mod6_p2_sp2">% - Trabajadores</string>
 
 
-    <string name="mod6_p3">3. Del número de trabajadores que Ud. nos mencionó anteriormente, Módulo V pregunta 1, ¿Cuántas personas o que porcentaje del personal de esta OCUpACIÓN son plenamente competentes en su empleo actual?</string>
+    <string name="mod6_p3">3. Del número de trabajadores que Ud. nos mencionó anteriormente, Módulo V pregunta 1, ¿Cuántas personas o que porcentaje del personal de esta OCUPACIÓN son plenamente competentes en su empleo actual?</string>
     <string name="mod6_p3_sp1">Gerentes</string>
-    <string name="mod6_p3_sp2">profesionales</string>
+    <string name="mod6_p3_sp2">Profesionales</string>
     <string name="mod6_p3_sp3">Técnicos y profesionales de nivel medio</string>
-    <string name="mod6_p3_sp4">personal de apoyo administrativo</string>
-    <string name="mod6_p3_sp5">personal de servicios y vendedores</string>
+    <string name="mod6_p3_sp4">Personal de apoyo administrativo</string>
+    <string name="mod6_p3_sp5">Personal de servicios y vendedores</string>
     <string name="mod6_p3_sp6">Trabajadores calificados agropecuarios, forestales y pesqueros</string>
     <string name="mod6_p3_sp7">Oficiales, operarios y artesanos de artes mecánicas y de otros oficios</string>
     <string name="mod6_p3_sp8">Operadores de instalaciones y máquinas y ensambladores</string>
     <string name="mod6_p3_sp9">Ocupaciones elementales</string>
     <string name="mod6_p3_sp10">Total</string>
 
-    <string name="mod6_p4">4. ¿Cuáles de las siguientes razones ocasionan que parte del personal de su empresa, como…(OCUpACION) no sea plenamente competente en su trabajo?</string>
-    <string name="mod6_p4_sp1">1.Desde el momento de la contratación, no contaba con las habilidades adquiridas</string>
-    <string name="mod6_p4_sp2">2.Se introdujo una nueva tecnología y el personal no se ha adaptado a ella   </string>
-    <string name="mod6_p4_sp3">3.No se capacita ni se desarrolla al personal   </string>
-    <string name="mod6_p4_sp4">4.Retención laboral deficiente   </string>
-    <string name="mod6_p4_sp5">5.personal que no cuenta  con todas las habilidades necesarias para realizar el trabajo</string>
+    <string name="mod6_p4">4. ¿Cuáles de las siguientes razones ocasionan que parte del personal de su empresa, como…(OCUPACIÓN) no sea plenamente competente en su trabajo?</string>
+    <string name="mod6_p4_sp1">1.Los contratamos a pesar que sabiamos que no contaban con las habilidades requeridas por el trabajo</string>
+    <string name="mod6_p4_sp2">2.Se introdujo una nueva tecnología y el personal no se ha adaptado a ella</string>
+    <string name="mod6_p4_sp3">3.No se capacita ni se desarrolla al personal</string>
+    <string name="mod6_p4_sp4">4.Retención laboral deficiente</string>
+    <string name="mod6_p4_sp5">5.Personal que no cuenta  con todas las habilidades necesarias para realizar el trabajo</string>
     <string name="mod6_p4_sp6">6.Otro</string>
     <string name="mod6_p4_op1">Gerentes</string>
-    <string name="mod6_p4_op2">profesionales</string>
+    <string name="mod6_p4_op2">Profesionales</string>
     <string name="mod6_p4_op3">Técnicos y profesionales de nivel medio</string>
-    <string name="mod6_p4_op4">personal de apoyo administrativo</string>
-    <string name="mod6_p4_op5">personal de servicios y vendedores</string>
+    <string name="mod6_p4_op4">Personal de apoyo administrativo</string>
+    <string name="mod6_p4_op5">Personal de servicios y vendedores</string>
     <string name="mod6_p4_op6">Trabajadores calificados agropecuarios, forestales y pesqueros</string>
     <string name="mod6_p4_op7">Oficiales, operarios y artesanos de artes mecánicas y de otros oficios</string>
     <string name="mod6_p4_op8">Operadores de instalaciones y máquinas y ensambladores</string>
@@ -786,7 +786,7 @@
     <string name="mod6_p9">9. Su empresa, ¿enfrenta dificultades para despedir empleados que no son lo suficientemente competentes en sus puestos de trabajo?</string>
 
     <string name="mod6_p10">10. Las dificultades se explican por....</string>
-    <string name="mod6_p10_sp1">1.procedimientos internos de la empresa 1</string>
+    <string name="mod6_p10_sp1">1.Procedimientos internos de la empresa 1</string>
     <string name="mod6_p10_sp2">2.Leyes y regulaciones laborales del perú 2</string>
     <string name="mod6_p10_sp3">3.Acuerdos Colectivos/ sindicatos de trabajadores en la</string>
     <string name="mod6_p10_sp4">4.Otro</string>
@@ -1294,7 +1294,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="soles">SOLES</string>
-    <string name="porcentaje">pORCENTAJE</string>
+    <string name="porcentaje">PORCENTAJE</string>
     <string name="ntrab">N° total de trabajadores</string>
     <string name="ntrab_mujeres">N° de trabajadores mujeres</string>
     <string name="ntrab_tiempoparcial">N° de trabajadores a tiempo parcial</string>
@@ -1707,4 +1707,12 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="orden_importancia">
+        <item>Seleccione orden </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>

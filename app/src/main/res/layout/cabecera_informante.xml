@@ -24,6 +24,7 @@
         android:layout_height="30dp"
         android:paddingLeft="@dimen/margin5dp"
         android:inputType="text"
+        android:maxLength="100"
         android:background="@drawable/cajas_de_texto"
         android:layout_marginBottom="@dimen/fab_margin"/>
     <TextView
@@ -57,5 +58,6 @@
         android:hint="@string/especifique"
         android:paddingLeft="@dimen/margin5dp"
         android:visibility="gone"
+        android:maxLength="100"
         android:background="@drawable/cajas_de_texto" />
 </LinearLayout>

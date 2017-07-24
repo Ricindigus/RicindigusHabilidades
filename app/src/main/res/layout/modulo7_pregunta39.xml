@@ -46,11 +46,12 @@
     </RadioGroup>
     <EditText
         android:id="@+id/p39_edtEspecifique"
-        android:inputType="textCapCharacters"
+        android:inputType="text"
         android:hint="@string/especifique"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:paddingLeft="@dimen/margin5dp"
+        android:maxLength="100"
         android:background="@drawable/cajas_de_texto"
         android:layout_marginLeft="@dimen/margin15dp"/>
 

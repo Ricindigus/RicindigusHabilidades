@@ -58,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:visibility="gone"
+            android:maxLength="20"
             android:layout_margin="@dimen/margin5dp"
             android:background="@drawable/cajas_de_texto"/>
         <LinearLayout
@@ -80,6 +81,7 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:inputType="text"
+                android:maxLength="300"
                 android:paddingLeft="@dimen/margin5dp"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
@@ -102,8 +104,9 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
-                android:inputType="numberPassword"
+                android:inputType="text"
                 android:paddingLeft="@dimen/margin5dp"
+                android:maxLength="4"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout
@@ -126,6 +129,7 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:inputType="text"
+                android:maxLength="4"
                 android:paddingLeft="@dimen/margin5dp"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
@@ -150,6 +154,7 @@
                 android:layout_height="30dp"
                 android:paddingLeft="@dimen/margin5dp"
                 android:inputType="text"
+                android:maxLength="4"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout
@@ -172,7 +177,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:paddingLeft="@dimen/margin5dp"
-                android:inputType="numberPassword"
+                android:inputType="text"
+                android:maxLength="2"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout
@@ -195,6 +201,7 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:inputType="text"
+                android:maxLength="4"
                 android:paddingLeft="@dimen/margin5dp"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
@@ -217,7 +224,8 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
-                android:inputType="numberPassword"
+                android:inputType="text"
+                android:maxLength="4"
                 android:paddingLeft="@dimen/margin5dp"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
@@ -240,8 +248,9 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
-                android:inputType="numberPassword"
+                android:inputType="text"
                 android:paddingLeft="@dimen/margin5dp"
+                android:maxLength="4"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout
@@ -265,6 +274,7 @@
                 android:layout_height="30dp"
                 android:inputType="text"
                 android:paddingLeft="@dimen/margin5dp"
+                android:maxLength="100"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout

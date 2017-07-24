@@ -149,19 +149,32 @@
                     android:text="@string/mod6_p5_sp18"
                     android:layout_marginBottom="@dimen/margin10dp"/>
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/mod6_p5_sp19"
-                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/mod6_p5_sp19"/>
+                    <EditText
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:layout_height="30dp"
+                        android:maxLength="100"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:background="@drawable/caja_texto_redonda"/>
+                </LinearLayout>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/mod6_p5_sp20"
                     android:layout_marginBottom="@dimen/margin10dp"/>
-
-
             </LinearLayout>
 
         </LinearLayout>

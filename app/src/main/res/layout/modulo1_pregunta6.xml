@@ -44,6 +44,7 @@
                 android:layout_height="30dp"
                 android:completionThreshold="1"
                 android:paddingLeft="@dimen/margin5dp"
+                android:maxLength="200"
                 android:background="@drawable/cajas_de_texto"/>
             <TextView
                 android:textAlignment="center"

@@ -20,9 +20,10 @@
         android:layout_marginBottom="@dimen/margin10dp"
         android:padding="@dimen/margin10dp">
         <EditText
-            android:inputType="text"
+            android:inputType="numberPassword"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:maxLength="3"
             android:background="@drawable/cajas_de_texto"/>
         <TextView
             android:layout_gravity="center"

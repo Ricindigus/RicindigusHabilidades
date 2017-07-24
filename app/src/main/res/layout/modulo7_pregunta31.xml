@@ -88,7 +88,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -167,7 +168,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -246,7 +248,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -325,7 +328,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -404,7 +408,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -483,7 +488,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -562,7 +568,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -641,7 +648,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -720,7 +728,8 @@
                     android:padding="@dimen/margin5dp"
                     android:text="¿Para qué porcentaje del personal en cada una de estas ocupaciones ha organizado capacitación?" />
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -728,7 +737,5 @@
                     android:layout_marginRight="30dp"/>
             </LinearLayout>
         </LinearLayout>
-
-
     </LinearLayout>
 </LinearLayout>

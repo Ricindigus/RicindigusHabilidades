@@ -94,6 +94,7 @@
                 <EditText
                     android:paddingLeft="@dimen/margin10dp"
                     android:inputType="text"
+                    android:maxLength="300"
                     android:hint="@string/especifique"
                     android:layout_marginTop="@dimen/margin10dp"
                     android:background="@drawable/cajas_de_texto"
@@ -101,8 +102,6 @@
                     android:layout_height="30dp" />
             </LinearLayout>
         </LinearLayout>
-
-
 
     </LinearLayout>
     <LinearLayout
@@ -179,6 +178,7 @@
                 <EditText
                     android:paddingLeft="@dimen/margin10dp"
                     android:inputType="text"
+                    android:maxLength="300"
                     android:hint="@string/especifique"
                     android:layout_marginTop="@dimen/margin10dp"
                     android:background="@drawable/cajas_de_texto"
@@ -186,8 +186,6 @@
                     android:layout_height="30dp" />
             </LinearLayout>
         </LinearLayout>
-
-
 
     </LinearLayout>
     <LinearLayout
@@ -264,6 +262,7 @@
                 <EditText
                     android:paddingLeft="@dimen/margin10dp"
                     android:inputType="text"
+                    android:maxLength="300"
                     android:hint="@string/especifique"
                     android:layout_marginTop="@dimen/margin10dp"
                     android:background="@drawable/cajas_de_texto"
@@ -347,6 +346,7 @@
                 <EditText
                     android:paddingLeft="@dimen/margin10dp"
                     android:inputType="text"
+                    android:maxLength="300"
                     android:hint="@string/especifique"
                     android:layout_marginTop="@dimen/margin10dp"
                     android:background="@drawable/cajas_de_texto"
@@ -414,10 +414,11 @@
                     android:text="@string/especifique"
                     android:layout_marginRight="@dimen/margin10dp"/>
                 <EditText
+                    android:inputType="text"
+                    android:maxLength="300"
                     android:background="@drawable/cajas_de_texto"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"/>
+                    android:layout_height="match_parent"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="@dimen/margin5dp"
@@ -450,6 +451,7 @@
                 <EditText
                     android:paddingLeft="@dimen/margin10dp"
                     android:inputType="text"
+                    android:maxLength="300"
                     android:hint="@string/especifique"
                     android:layout_marginTop="@dimen/margin10dp"
                     android:background="@drawable/cajas_de_texto"

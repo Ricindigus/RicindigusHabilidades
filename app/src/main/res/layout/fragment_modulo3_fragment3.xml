@@ -19,7 +19,6 @@
             android:padding="@dimen/fab_margin"/>
     </LinearLayout>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,6 +28,7 @@
             android:layout_height="wrap_content">
             <include layout="@layout/modulo3_pregunta11"/>
             <include layout="@layout/modulo3_pregunta12"/>
+            <include layout="@layout/layout_observaciones"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

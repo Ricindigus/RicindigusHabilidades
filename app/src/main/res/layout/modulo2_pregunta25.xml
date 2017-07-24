@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mod2_p23"
+        android:text="@string/mod2_p25"
         android:layout_marginBottom="@dimen/fab_margin" />
     <RadioGroup
         android:gravity="center"
@@ -42,13 +42,36 @@
                 android:layout_width="160dp"
                 android:paddingLeft="@dimen/margin5dp"
                 android:layout_height="match_parent"
-                android:text="¿Cuántos hombres?"
+                android:text="¿Cuántos en total?"
                 android:textColor="@color/icons"
                 android:background="@color/accent"
                 />
             <EditText
                 android:layout_width="100dp"
                 android:layout_height="30dp"
+                android:inputType="numberPassword"
+                android:maxLength="5"
+                android:background="@drawable/cajas_de_texto"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/margin5dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="160dp"
+                android:paddingLeft="@dimen/margin5dp"
+                android:layout_height="match_parent"
+                android:text="¿Cuántas hombres?"
+                android:textColor="@color/icons"
+                android:background="@color/accent"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:inputType="numberPassword"
+                android:maxLength="5"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
         <LinearLayout
@@ -68,25 +91,9 @@
             <EditText
                 android:layout_width="100dp"
                 android:layout_height="30dp"
-                android:background="@drawable/cajas_de_texto"/>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_margin="@dimen/margin5dp">
-            <TextView
-                android:gravity="center_vertical"
-                android:layout_width="160dp"
-                android:paddingLeft="@dimen/margin5dp"
-                android:layout_height="match_parent"
-                android:text="Total"
-                android:textColor="@color/icons"
-                android:background="@color/primary_text"
-                />
-            <EditText
-                android:layout_width="100dp"
-                android:layout_height="30dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="5"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
     </LinearLayout>

@@ -41,7 +41,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="MUY BUENA"
+                    android:text="MUY BARATO"
                     android:gravity="center"
                     android:background="@color/accent"
                     android:textColor="@color/icons"
@@ -52,7 +52,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="BUENA"
+                    android:text="BARATO"
                     android:gravity="center"
                     android:background="@color/accent"
                     android:textColor="@color/icons"
@@ -63,7 +63,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="MALA"
+                    android:text="CARO"
                     android:gravity="center"
                     android:background="@color/accent"
                     android:textColor="@color/icons"
@@ -74,7 +74,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="MUY MALA"
+                    android:text="MUY CARO"
                     android:gravity="center"
                     android:background="@color/accent"
                     android:textColor="@color/icons"
@@ -117,35 +117,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -174,35 +170,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -231,35 +223,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -288,35 +276,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -345,35 +329,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -402,35 +382,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -459,35 +435,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -516,35 +488,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -573,35 +541,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>
@@ -630,6 +594,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:inputType="text"
+                    android:maxLength="100"
                     android:hint="@string/especifique"
                     android:paddingLeft="@dimen/margin5dp"
                     android:background="@drawable/caja_texto_redonda"
@@ -646,35 +611,31 @@
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="1"
+                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="2"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="3"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="4"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
                 <RadioButton
                     android:background="@drawable/cajas_de_texto"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:text="5"
                     android:layout_height="match_parent"
                     android:layout_marginRight="1dp"/>
             </RadioGroup>

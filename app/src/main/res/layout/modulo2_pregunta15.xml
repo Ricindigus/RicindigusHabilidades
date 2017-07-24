@@ -55,6 +55,8 @@
             <EditText
                 android:paddingLeft="@dimen/margin5dp"
                 android:hint="@string/especifique"
+                android:inputType="text"
+                android:maxLength="200"
                 android:background="@drawable/cajas_de_texto"
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />

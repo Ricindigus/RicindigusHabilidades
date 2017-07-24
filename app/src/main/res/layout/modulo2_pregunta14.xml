@@ -28,9 +28,10 @@
             android:layout_marginRight="@dimen/margin15dp"/>
         <EditText
             android:paddingLeft="@dimen/margin5dp"
-            android:inputType="number"
+            android:inputType="numberPassword"
             android:layout_width="100dp"
             android:layout_height="30dp"
+            android:maxLength="5"
             android:background="@drawable/cajas_de_texto"/>
     </LinearLayout>
 </LinearLayout>

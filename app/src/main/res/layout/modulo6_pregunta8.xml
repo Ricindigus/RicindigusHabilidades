@@ -16,6 +16,15 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/margin5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/accent"
+            android:text="RAZONES"
+            />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -31,6 +40,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -52,6 +62,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -73,6 +84,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -94,6 +106,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -115,6 +128,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -136,6 +150,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -157,6 +172,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -178,6 +194,7 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -199,11 +216,11 @@
                 android:background="@color/accent"/>
             <EditText
                 android:inputType="text"
+                android:maxLength="500"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>

@@ -33,6 +33,7 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:background="@drawable/cajas_de_texto"
-            android:inputType="number" />
+            android:inputType="numberPassword"
+            android:maxLength="5"/>
     </LinearLayout>
 </LinearLayout>

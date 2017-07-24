@@ -23,6 +23,7 @@
         android:layout_height="30dp"
         android:background="@drawable/cajas_de_texto"
         android:paddingLeft="@dimen/margin5dp"
+        android:maxLength="300"
         android:layout_marginBottom="@dimen/margin10dp"/>
     <LinearLayout
         android:orientation="horizontal"

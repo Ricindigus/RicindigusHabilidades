@@ -245,6 +245,7 @@
                     android:background="@drawable/cajas_de_texto"
                     android:hint="@string/especifique"
                     android:inputType="text"
+                    android:maxLength="200"
                     android:paddingLeft="@dimen/margin5dp" />
             </LinearLayout>
 

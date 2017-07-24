@@ -29,6 +29,7 @@
             <include layout="@layout/modulo4_pregunta8"/>
             <include layout="@layout/modulo4_pregunta9"/>
             <include layout="@layout/modulo4_pregunta10"/>
+            <include layout="@layout/layout_observaciones"/>
         </LinearLayout>
     </ScrollView>
 

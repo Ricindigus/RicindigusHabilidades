@@ -86,7 +86,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -98,7 +99,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -167,7 +169,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -179,7 +182,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -248,7 +252,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -260,7 +265,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -329,7 +335,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -341,7 +348,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -410,7 +418,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -422,7 +431,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -491,7 +501,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -503,7 +514,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -572,7 +584,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -584,7 +597,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -653,7 +667,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -665,7 +680,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -734,7 +750,8 @@
                     android:gravity="center_vertical"
                     android:text="¿Cuántos contrato?"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -746,7 +763,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -768,6 +786,8 @@
                 android:textStyle="bold"
                 android:background="@android:color/black"/>
             <EditText
+                android:inputType="numberPassword"
+                android:maxLength="5"
                 android:background="@drawable/caja_texto_negro"
                 android:layout_weight="3"
                 android:layout_width="0dp"
@@ -782,6 +802,8 @@
                 android:textStyle="bold"
                 android:background="@android:color/black"/>
             <EditText
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_negro"
                 android:layout_width="0dp"
                 android:layout_weight="3"

@@ -28,6 +28,7 @@
             android:layout_height="wrap_content">
             <include layout="@layout/modulo5_pregunta8"/>
             <include layout="@layout/modulo5_pregunta27"/>
+            <include layout="@layout/layout_observaciones"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

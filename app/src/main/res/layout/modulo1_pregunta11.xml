@@ -71,6 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:paddingLeft="@dimen/margin5dp"
+            android:maxLength="3"
             android:inputType="numberPassword"
             android:background="@drawable/cajas_de_texto"/>
     </LinearLayout>
@@ -98,6 +99,7 @@
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:paddingLeft="@dimen/margin5dp"
+            android:maxLength="2"
             android:inputType="numberPassword"
             android:background="@drawable/cajas_de_texto"/>
     </LinearLayout>

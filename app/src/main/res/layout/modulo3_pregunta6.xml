@@ -27,7 +27,8 @@
             android:textColor="@color/primary_text"
             android:layout_marginRight="@dimen/margin15dp"/>
         <EditText
-            android:inputType="number"
+            android:inputType="numberPassword"
+            android:maxLength="10"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:background="@drawable/cajas_de_texto"/>

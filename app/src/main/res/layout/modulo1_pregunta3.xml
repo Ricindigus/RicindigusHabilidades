@@ -87,6 +87,7 @@
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:inputType="text"
+            android:maxLength="100"
             android:paddingLeft="@dimen/margin5dp"
             android:background="@drawable/cajas_de_texto"/>
     </LinearLayout>

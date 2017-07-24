@@ -20,7 +20,8 @@
         android:layout_marginBottom="@dimen/margin10dp"
         android:padding="@dimen/margin10dp">
         <EditText
-            android:inputType="text"
+            android:inputType="numberPassword"
+            android:maxLength="5"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/cajas_de_texto"/>

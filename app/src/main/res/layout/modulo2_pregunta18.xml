@@ -215,6 +215,7 @@
                     android:layout_weight="3"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
+                    android:maxLength="200"
                     android:background="@drawable/cajas_de_texto"
                     />
             </LinearLayout>

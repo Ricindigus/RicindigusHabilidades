@@ -75,6 +75,7 @@
                     android:paddingLeft="@dimen/margin5dp"
                     android:layout_height="match_parent"
                     android:enabled="false"
+                    android:maxLength="5"
                     android:background="@drawable/cajas_de_texto_disabled"/>
             </LinearLayout>
             <LinearLayout
@@ -100,6 +101,7 @@
                     android:paddingLeft="@dimen/margin5dp"
                     android:layout_height="match_parent"
                     android:enabled="false"
+                    android:maxLength="5"
                     android:background="@drawable/cajas_de_texto_disabled"/>
             </LinearLayout>
             <LinearLayout
@@ -125,6 +127,7 @@
                     android:paddingLeft="@dimen/margin5dp"
                     android:layout_height="match_parent"
                     android:enabled="false"
+                    android:maxLength="5"
                     android:background="@drawable/cajas_de_texto_disabled"/>
             </LinearLayout>
             <LinearLayout
@@ -150,6 +153,7 @@
                     android:layout_height="match_parent"
                     android:paddingLeft="@dimen/margin5dp"
                     android:enabled="false"
+                    android:maxLength="5"
                     android:background="@drawable/cajas_de_texto_disabled"/>
             </LinearLayout>
             <LinearLayout
@@ -175,6 +179,7 @@
                     android:paddingLeft="@dimen/margin5dp"
                     android:layout_height="match_parent"
                     android:enabled="false"
+                    android:maxLength="5"
                     android:background="@drawable/cajas_de_texto_disabled"/>
             </LinearLayout>
             <LinearLayout

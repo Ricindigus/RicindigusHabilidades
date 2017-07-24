@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:paddingLeft="@dimen/margin5dp"
+            android:maxLength="300"
             android:background="@drawable/cajas_de_texto"
             android:layout_marginBottom="@dimen/margin10dp"/>
         <LinearLayout
@@ -82,6 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:paddingLeft="@dimen/margin5dp"
+            android:maxLength="300"
             android:background="@drawable/cajas_de_texto"
             android:layout_marginBottom="@dimen/margin10dp"/>
         <LinearLayout

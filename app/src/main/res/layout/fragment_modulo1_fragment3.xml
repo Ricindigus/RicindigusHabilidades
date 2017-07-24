@@ -34,6 +34,7 @@
             android:layout_height="wrap_content">
             <include layout="@layout/modulo1_pregunta11"/>
             <include layout="@layout/modulo1_pregunta12"/>
+            <include layout="@layout/layout_observaciones"/>
         </LinearLayout>
     </ScrollView>
 

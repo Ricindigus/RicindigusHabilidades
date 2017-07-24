@@ -11,19 +11,6 @@
         android:layout_height="wrap_content"
         android:text="@string/mod7_p43"
         android:layout_marginBottom="@dimen/fab_margin"/>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin10dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SI"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NO"/>
-    </RadioGroup>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,6 +37,7 @@
                 android:layout_height="30dp"
                 android:background="@drawable/cajas_de_texto"
                 android:inputType="numberPassword"
+                android:maxLength="5"
                 android:layout_marginRight="30dp" />
         </LinearLayout>
         <LinearLayout
@@ -71,6 +59,7 @@
                 android:layout_height="30dp"
                 android:background="@drawable/cajas_de_texto"
                 android:inputType="numberPassword"
+                android:maxLength="3"
                 android:layout_marginRight="30dp" />
         </LinearLayout>
     </LinearLayout>

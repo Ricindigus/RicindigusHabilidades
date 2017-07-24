@@ -31,12 +31,15 @@
             android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
             android:background="@drawable/cajas_de_texto">
+
             <CheckBox
+                android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp1"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp1"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:paddingLeft="30dp"
                 android:layout_width="match_parent"
@@ -58,7 +61,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -70,7 +74,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -111,7 +116,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -123,7 +129,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -164,7 +171,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -176,7 +184,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -217,7 +226,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -229,7 +239,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -270,7 +281,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -282,7 +294,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -323,7 +336,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -335,7 +349,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -376,7 +391,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -388,7 +404,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -429,7 +446,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -441,7 +459,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -482,7 +501,8 @@
                     android:gravity="center_vertical"
                     android:text="N°  de Competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -494,7 +514,8 @@
                     android:layout_marginRight="@dimen/margin10dp"
                     android:text="Porcentaje de competentes"/>
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:paddingLeft="5dp"
@@ -518,6 +539,8 @@
             android:textStyle="bold"
             android:background="@color/accent"/>
         <EditText
+            android:inputType="numberPassword"
+            android:maxLength="5"
             android:background="@drawable/cajas_de_texto"
             android:layout_weight="3"
             android:layout_width="0dp"
@@ -533,6 +556,8 @@
             android:textStyle="bold"
             android:background="@color/accent"/>
         <EditText
+            android:inputType="numberPassword"
+            android:maxLength="5"
             android:background="@drawable/cajas_de_texto"
             android:layout_width="0dp"
             android:layout_weight="3"

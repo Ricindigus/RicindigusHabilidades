@@ -58,7 +58,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
         <LinearLayout
@@ -78,7 +79,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
         <LinearLayout
@@ -98,7 +100,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
         <LinearLayout
@@ -118,7 +121,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
 
@@ -139,7 +143,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
 
@@ -164,6 +169,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
+                    android:maxLength="200"
                     android:background="@drawable/cajas_de_texto"
                     />
             </LinearLayout>
@@ -172,7 +178,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="@dimen/margin15dp"
-                android:inputType="number"
+                android:inputType="numberPassword"
+                android:maxLength="3"
                 android:background="@drawable/caja_texto_redonda"/>
         </LinearLayout>
     </LinearLayout>
