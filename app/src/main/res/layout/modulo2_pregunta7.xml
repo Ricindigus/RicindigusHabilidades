@@ -4,9 +4,12 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
     android:padding="@dimen/margin15dp"
+    android:id="@+id/mod2_p7_lyt"
+    android:focusableInTouchMode="true"
     android:background="@drawable/borde_layout_preguntas"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:id="@+id/mod2_p7_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mod2_p7"
@@ -27,7 +30,8 @@
             android:textColor="@color/primary_text"
             android:layout_marginRight="@dimen/margin15dp"/>
         <EditText
-            android:inputType="number"
+            android:id="@+id/mod2_p7_edt"
+            android:inputType="numberPassword"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:paddingLeft="@dimen/margin5dp"

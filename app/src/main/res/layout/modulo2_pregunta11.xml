@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
     android:padding="@dimen/margin15dp"
+    android:id="@+id/mod2_p11_lyt"
+    android:focusableInTouchMode="true"
     android:background="@drawable/borde_layout_preguntas"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView

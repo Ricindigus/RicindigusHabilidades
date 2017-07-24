@@ -27,9 +27,9 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <include layout="@layout/modulo2_pregunta18"/>
             <include layout="@layout/modulo2_pregunta19"/>
             <include layout="@layout/modulo2_pregunta20"/>
+            <include layout="@layout/modulo2_pregunta21"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

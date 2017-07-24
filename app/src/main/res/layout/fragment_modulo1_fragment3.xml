@@ -32,8 +32,6 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <include layout="@layout/modulo1_pregunta9"/>
-            <include layout="@layout/modulo1_pregunta10"/>
             <include layout="@layout/modulo1_pregunta11"/>
             <include layout="@layout/modulo1_pregunta12"/>
         </LinearLayout>

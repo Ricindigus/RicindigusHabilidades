@@ -6,13 +6,16 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
     android:padding="@dimen/margin15dp"
-    android:background="@drawable/borde_layout_preguntas"
-    >
+    android:id="@+id/mod1_p1_lyt"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/borde_layout_preguntas">
     <TextView
+        android:id="@+id/mod1_p1_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/modulo1_pregunta1"
-        android:layout_marginBottom="@dimen/fab_margin"/>
+        android:layout_marginBottom="@dimen/fab_margin"
+        />
     <EditText
         android:id="@+id/mod1_p1_edtActividadPrimaria"
         android:inputType="text"

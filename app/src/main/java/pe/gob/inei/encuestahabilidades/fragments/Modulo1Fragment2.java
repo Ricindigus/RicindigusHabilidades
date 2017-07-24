@@ -8,6 +8,7 @@ import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.InputFilter;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +16,12 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import pe.gob.inei.encuestahabilidades.NumericKeyBoardTransformationMethod;
 import pe.gob.inei.encuestahabilidades.R;
 
 /**
@@ -26,23 +29,35 @@ import pe.gob.inei.encuestahabilidades.R;
  */
 public class Modulo1Fragment2 extends Fragment {
 
-    private LinearLayout lytPregunta5;
-    private RadioGroup rgP5;
+    private LinearLayout lytP6;
+    private LinearLayout lytP7;
+    private LinearLayout lytP8;
+    private LinearLayout lytP9;
+    private LinearLayout lytP10;
 
-    private LinearLayout lytPregunta6;
+    private TextView txtPregunta6;
+    private TextView txtPregunta7;
+    private TextView txtPregunta8;
+    private TextView txtPregunta9;
+    private TextView txtPregunta10;
+
     private AutoCompleteTextView autoCompleteTextView;
     private TextView txtPaisSeleccionado;
 
-    private LinearLayout lytPregunta7;
     private RadioGroup rg1P7;
     private RadioGroup rg2P7;
     private RadioGroup rgP7Sp1;
     private RadioGroup rgP7Sp2;
+    private RadioGroup rgP8;
+
+    private EditText edtNEstablecimientos;
+    private RadioGroup rgEstablecimientos;
+
     private LinearLayout lytP7Sp1;
     private LinearLayout lytP7Sp2;
 
 
-    private RadioGroup rgP8;
+
 
 
     public Modulo1Fragment2() {
@@ -55,14 +70,24 @@ public class Modulo1Fragment2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_modulo1_fragment2, container, false);
-        lytPregunta5 = (LinearLayout) rootView.findViewById(R.id.mod1_p5_lytPregunta5);
-        rgP5 = (RadioGroup) rootView.findViewById(R.id.mod1_p5_rg);
 
-        lytPregunta6 = (LinearLayout) rootView.findViewById(R.id.mod1_p6_lytPregunta6);
+
+        lytP6 = (LinearLayout) rootView.findViewById(R.id.mod1_p6_lyt);
+        lytP7 = (LinearLayout) rootView.findViewById(R.id.mod1_p7_lyt);
+        lytP8 = (LinearLayout) rootView.findViewById(R.id.mod1_p8_lyt);
+        lytP9 = (LinearLayout) rootView.findViewById(R.id.mod1_p9_lyt);
+        lytP10 = (LinearLayout) rootView.findViewById(R.id.mod1_p10_lyt);
+
+        txtPregunta6 = (TextView) rootView.findViewById(R.id.mod1_p6_txtPregunta);
+        txtPregunta7 = (TextView) rootView.findViewById(R.id.mod1_p7_txtPregunta);
+        txtPregunta8 = (TextView) rootView.findViewById(R.id.mod1_p8_txtPregunta);
+        txtPregunta9 = (TextView) rootView.findViewById(R.id.mod1_p9_txtPregunta);
+        txtPregunta10 = (TextView) rootView.findViewById(R.id.mod1_p10_txtPregunta);
+
+
         autoCompleteTextView = (AutoCompleteTextView) rootView.findViewById(R.id.mod1_p6_autotxtPaises);
         txtPaisSeleccionado = (TextView) rootView.findViewById(R.id.mod1_p6_txtPaisSeleccionado);
 
-        lytPregunta7 = (LinearLayout) rootView.findViewById(R.id.mod1_p7_lytPregunta7);
         rg1P7 = (RadioGroup) rootView.findViewById(R.id.mod1_p7_rg1);
         rg2P7 = (RadioGroup) rootView.findViewById(R.id.mod1_p7_rg2);
         rgP7Sp1 = (RadioGroup) rootView.findViewById(R.id.mod1_p7_rgSp1);
@@ -72,8 +97,8 @@ public class Modulo1Fragment2 extends Fragment {
 
         rgP8 = (RadioGroup) rootView.findViewById(R.id.mod1_p8_rg);
 
-
-        lytPregunta5.requestFocus();
+        edtNEstablecimientos = (EditText) rootView.findViewById(R.id.mod1_p9_edtEstablecimientos);
+        rgEstablecimientos = (RadioGroup) rootView.findViewById(R.id.mod1_p10_rgEstablecimiento);
         return rootView;
     }
 
@@ -81,7 +106,25 @@ public class Modulo1Fragment2 extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RadioGroup[] radioGroups = {rgP5,rg1P7,rg2P7,rgP7Sp1,rgP7Sp2, rgP8};
+        LinearLayout[] linearLayouts = {lytP6,lytP7,lytP8,lytP9,lytP10};
+        TextView[] textViews = {txtPregunta6,txtPregunta7,txtPregunta8,txtPregunta9,txtPregunta10};
+
+        for (int i = 0; i < linearLayouts.length; i++) {
+            final LinearLayout linearLayout = linearLayouts[i];
+            final TextView textView = textViews[i];
+            linearLayout.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View view, boolean b) {
+                    if(b) {
+                        ocultarTeclado(linearLayout);
+                        textView.setBackgroundColor(Color.CYAN);
+                    }
+                    else textView.setBackgroundColor(Color.TRANSPARENT);
+                }
+            });
+        }
+
+        RadioGroup[] radioGroups = {rg1P7,rg2P7,rgP7Sp1,rgP7Sp2, rgP8};
 
         for (int i = 0; i < radioGroups.length; i++) {
             final RadioGroup radioGroup = radioGroups[i];
@@ -99,17 +142,7 @@ public class Modulo1Fragment2 extends Fragment {
             });
         }
 
-        rgP5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-                switch (i){
-                    case 0:break;
-                    case 1:break;
-                }
-                autoCompleteTextView.requestFocus();
-                mostrarTeclado();
-            }
-        });
+
 
         String[] paises = getResources().getStringArray(R.array.paises);
         ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(),R.layout.lista_item,R.id.item,paises);
@@ -131,7 +164,7 @@ public class Modulo1Fragment2 extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 txtPaisSeleccionado.setText(autoCompleteTextView.getText().toString().toUpperCase());
-                rg1P7.requestFocus();
+                lytP7.requestFocus();
             }
         });
 
@@ -174,7 +207,7 @@ public class Modulo1Fragment2 extends Fragment {
                     case R.id.mod1_p7_rg2_rbNo:
                         rgP7Sp2.clearCheck();
                         lytP7Sp2.setVisibility(View.GONE);
-                        rgP8.requestFocus();
+                        lytP8.requestFocus();
                         break;
                 }
             }
@@ -188,10 +221,48 @@ public class Modulo1Fragment2 extends Fragment {
                     case R.id.mod1_p7_rgSp2_rbNo:
                         break;
                 }
-                rgP8.requestFocus();
+                lytP8.requestFocus();
+            }
+        });
+        rgP8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                lytP9.requestFocus();
+            }
+        });
+        edtNEstablecimientos.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
+                if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    ocultarTeclado(edtNEstablecimientos);
+                    lytP10.requestFocus();
+                    return true;
+                }
+                return false;
             }
         });
 
+        rgEstablecimientos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                switch (i){
+                    case R.id.mod1_p10_rbSi:
+                        break;
+                    case R.id.mod1_p10_rbNo:
+                        break;
+                }
+            }
+        });
+
+        rgEstablecimientos.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(b) rgEstablecimientos.setBackgroundColor(Color.CYAN);
+                else rgEstablecimientos.setBackgroundColor(Color.TRANSPARENT);
+            }
+        });
+        edtNEstablecimientos.setTransformationMethod(new NumericKeyBoardTransformationMethod());
     }
 
     public void ocultarTeclado(View view){

@@ -20,7 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin5dp">
-
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="0dp"
@@ -31,7 +30,6 @@
                 android:text="Razones"
                 android:textColor="@color/icons"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="0dp"

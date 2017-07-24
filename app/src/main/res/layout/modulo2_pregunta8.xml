@@ -4,9 +4,12 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
     android:padding="@dimen/margin15dp"
+    android:id="@+id/mod2_p8_lyt"
+    android:focusableInTouchMode="true"
     android:background="@drawable/borde_layout_preguntas"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:id="@+id/mod2_p8_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mod2_p8"
@@ -22,7 +25,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
+            android:layout_marginBottom="1dp">
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -32,17 +35,17 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:padding="@dimen/margin10dp"
-                android:background="@drawable/cabecera"/>
+                android:layout_marginRight="1dp"
+                android:background="@color/accent"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/margin5dp"
                 android:text="Número"
                 android:textStyle="bold"
-                android:textAlignment="center"
                 android:gravity="center"
+                android:padding="@dimen/margin10dp"
                 android:textColor="@color/icons"
-                android:background="@drawable/cabecera"/>
+                android:background="@color/accent"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -50,23 +53,25 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
-            <TextView
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p8_ck1"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p8_sp1"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
+                android:layout_marginRight="1dp"
                 android:background="@drawable/cajas_de_texto"/>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p8_edt1"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
+                android:enabled="false"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -74,23 +79,25 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
-            <TextView
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p8_ck2"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p8_sp2"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:background="@drawable/cajas_de_texto"
+                android:layout_marginRight="1dp"/>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p8_edt2"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:enabled="false"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -108,11 +115,16 @@
                 android:textColor="@color/icons"
                 android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
+                android:layout_marginRight="1dp"
                 android:background="@color/primary_text"/>
             <TextView
+                android:id="@+id/mod2_p8_txtTotal"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
+                android:text="0"
+                android:textSize="@dimen/textoMedium"
+                android:gravity="center_vertical"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
 

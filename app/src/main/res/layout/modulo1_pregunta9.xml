@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:id="@+id/mod1_p9_lytPregunta9"
+    android:id="@+id/mod1_p9_lyt"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
     android:padding="@dimen/fab_margin"
-    android:focusableInTouchMode="true"
     android:background="@drawable/borde_layout_preguntas"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:id="@+id/mod1_p9_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/modulo1_pregunta9"/>

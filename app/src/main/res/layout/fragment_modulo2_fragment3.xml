@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/mod2_p10_lyt"
+    android:focusableInTouchMode="true"
     tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo2Fragment3">
     <LinearLayout
         android:layout_width="match_parent"

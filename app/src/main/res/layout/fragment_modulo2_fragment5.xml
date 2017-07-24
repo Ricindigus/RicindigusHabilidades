@@ -30,6 +30,7 @@
             <include layout="@layout/modulo2_pregunta15"/>
             <include layout="@layout/modulo2_pregunta16"/>
             <include layout="@layout/modulo2_pregunta17"/>
+            <include layout="@layout/modulo2_pregunta18"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

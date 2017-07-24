@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical"
+    android:id="@+id/mod2_p9_lyt"
+    android:focusableInTouchMode="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/fab_margin"
@@ -7,6 +9,7 @@
     android:background="@drawable/borde_layout_preguntas"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:id="@+id/mod2_p9_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mod2_p9"
@@ -22,23 +25,53 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
+            android:layout_marginBottom="1dp">
             <TextView
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tipo de contrato"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:background="@color/accent"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Número"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:background="@color/accent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin10dp"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p9_ck1"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p9_sp1"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
-                android:background="@color/accent"/>
-            <EditText
-                android:paddingLeft="@dimen/margin5dp"
-                android:inputType="number"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
                 android:background="@drawable/cajas_de_texto"/>
+            <EditText
+                android:id="@+id/mod2_p9_edt1"
+                android:paddingLeft="@dimen/margin5dp"
+                android:inputType="numberPassword"
+                android:layout_width="100dp"
+                android:enabled="false"
+                android:layout_height="match_parent"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -46,23 +79,25 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
-            <TextView
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p9_ck2"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p9_sp2"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
+                android:layout_marginRight="1dp"
                 android:padding="@dimen/margin10dp"
-                android:background="@color/accent"/>
+                android:background="@drawable/cajas_de_texto"/>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p9_edt2"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:enabled="false"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -70,23 +105,25 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
-            <TextView
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p9_ck3"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p9_sp3"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
-                android:background="@color/accent"/>
+                android:layout_marginRight="1dp"
+                android:background="@drawable/cajas_de_texto"/>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p9_edt3"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:enabled="false"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -94,36 +131,43 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
+            android:layout_marginBottom="1dp">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:background="@color/accent">
-                <TextView
+                android:layout_marginRight="1dp"
+                android:background="@drawable/cajas_de_texto"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:id="@+id/mod2_p9_ck4"
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/mod2_p9_sp4"
-                    android:textColor="@color/icons"
-                    android:textStyle="bold"
                     android:padding="@dimen/margin10dp"
-                    android:background="@color/accent"/>
+                    />
                 <EditText
+                    android:id="@+id/mod2_p9_edtEspecifique"
                     android:paddingLeft="@dimen/margin5dp"
                     android:layout_margin="5dp"
                     android:inputType="text"
-                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:hint="@string/especifique"
-                    android:background="@drawable/caja_texto_redonda"/>
+                    android:enabled="false"
+                    android:nextFocusForward="@+id/mod2_p9_edt4"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/caja_redonda_disabled"/>
             </LinearLayout>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p9_edt4"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:enabled="false"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -131,23 +175,25 @@
             android:layout_height="40dp"
             android:layout_marginLeft="@dimen/margin10dp"
             android:layout_marginRight="@dimen/margin10dp"
-            android:layout_marginBottom="@dimen/margin5dp">
-            <TextView
+            android:layout_marginBottom="1dp">
+            <CheckBox
+                android:id="@+id/mod2_p9_ck5"
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/mod2_p9_sp5"
-                android:textColor="@color/icons"
-                android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
-                android:background="@color/accent"/>
+                android:layout_marginRight="1dp"
+                android:background="@drawable/cajas_de_texto"/>
             <EditText
-                android:inputType="number"
+                android:id="@+id/mod2_p9_edt5"
+                android:inputType="numberPassword"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/margin5dp"
-                android:background="@drawable/cajas_de_texto"/>
+                android:enabled="false"
+                android:background="@drawable/cajas_de_texto_disabled"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -165,11 +211,15 @@
                 android:textColor="@color/icons"
                 android:textStyle="bold"
                 android:padding="@dimen/margin10dp"
+                android:layout_marginRight="1dp"
                 android:background="@color/primary_text"/>
             <TextView
+                android:id="@+id/mod2_p9_txtTotal"
                 android:layout_width="100dp"
                 android:paddingLeft="@dimen/margin5dp"
                 android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center_vertical"
                 android:background="@drawable/cajas_de_texto"/>
         </LinearLayout>
 

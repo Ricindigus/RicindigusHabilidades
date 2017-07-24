@@ -28,6 +28,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import pe.gob.inei.encuestahabilidades.NumericKeyBoardTransformationMethod;
 import pe.gob.inei.encuestahabilidades.R;
 
@@ -35,6 +37,19 @@ import pe.gob.inei.encuestahabilidades.R;
  * A simple {@link Fragment} subclass.
  */
 public class Modulo1Fragment1 extends Fragment {
+
+    private LinearLayout lytP1;
+    private LinearLayout lytP2;
+    private LinearLayout lytP3;
+    private LinearLayout lytP4;
+    private LinearLayout lytP5;
+
+    private TextView txtPregunta1;
+    private TextView txtPregunta2;
+    private TextView txtPregunta3;
+    private TextView txtPregunta4;
+    private TextView txtPregunta5;
+
 
     private LinearLayout lytFragment;
 
@@ -55,12 +70,10 @@ public class Modulo1Fragment1 extends Fragment {
 
     private LinearLayout lytActividadSec2;
 
-    private LinearLayout lytPregunta3;
     private RadioGroup rgOrgEmpresa;
     private LinearLayout lytespecifiqueOrg;
     private EditText edtEspecifiqueOrg;
 
-    private LinearLayout lytPregunta4;
     private RadioGroup rgSP41;
     private RadioGroup rgSP42;
 
@@ -78,8 +91,19 @@ public class Modulo1Fragment1 extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_modulo1_fragment1, container, false);
 
-        lytFragment = (LinearLayout) rootView.findViewById(R.id.mod1_layoutFragment1);
+        lytP1 = (LinearLayout) rootView.findViewById(R.id.mod1_p1_lyt);
+        lytP2 = (LinearLayout) rootView.findViewById(R.id.mod1_p2_lyt);
+        lytP3 = (LinearLayout) rootView.findViewById(R.id.mod1_p3_lyt);
+        lytP4 = (LinearLayout) rootView.findViewById(R.id.mod1_p4_lyt);
+        lytP5 = (LinearLayout) rootView.findViewById(R.id.mod1_p5_lyt);
 
+        txtPregunta1 = (TextView) rootView.findViewById(R.id.mod1_p1_txtPregunta);
+        txtPregunta2 = (TextView) rootView.findViewById(R.id.mod1_p2_txtPregunta);
+        txtPregunta3 = (TextView) rootView.findViewById(R.id.mod1_p3_txtPregunta);
+        txtPregunta4 = (TextView) rootView.findViewById(R.id.mod1_p4_txtPregunta);
+        txtPregunta5 = (TextView) rootView.findViewById(R.id.mod1_p5_txtPregunta);
+
+        lytFragment = (LinearLayout) rootView.findViewById(R.id.mod1_layoutFragment1);
         ckMismoInformante1 = (CheckBox) rootView.findViewById(R.id.cab_ckMismoInformante);
         edtNombYApellidos1 = (EditText)rootView.findViewById(R.id.cab_edtApeYNom);
         spCargo1 = (Spinner) rootView.findViewById(R.id.cab_spCargo);
@@ -95,12 +119,12 @@ public class Modulo1Fragment1 extends Fragment {
         edtCIUSecundaria2 = (EditText)rootView.findViewById(R.id.mod1_p2_edtCIUSecundaria2);
         lytActividadSec2 = (LinearLayout) rootView.findViewById(R.id.mod1_p2_lytActividadSecundaria2);
 
-        lytPregunta3 = (LinearLayout) rootView.findViewById(R.id.mod1_p3_lytPregunta3);
+
         rgOrgEmpresa = (RadioGroup) rootView.findViewById(R.id.mod1_p3_rgOrgEmpresa);
         lytespecifiqueOrg = (LinearLayout) rootView.findViewById(R.id.mod1_p3_lytEspecifiqueOrg);
         edtEspecifiqueOrg = (EditText) rootView.findViewById(R.id.mod1_p3_edtEspecifiqueOrg);
 
-        lytPregunta4 = (LinearLayout) rootView.findViewById(R.id.mod1_p4_lytSubpreguntas);
+
         rgSP41 = (RadioGroup) rootView.findViewById(R.id.mod1_p4_rg41);
         rgSP42 = (RadioGroup) rootView.findViewById(R.id.mod1_p4_rg42);
         return rootView;
@@ -110,9 +134,27 @@ public class Modulo1Fragment1 extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        LinearLayout[] linearLayouts = {lytP1,lytP2,lytP3,lytP4,lytP5};
+        TextView[] textViews = {txtPregunta1,txtPregunta2,txtPregunta3,txtPregunta4,txtPregunta5};
+
+        for (int i = 0; i < linearLayouts.length; i++) {
+            final LinearLayout linearLayout = linearLayouts[i];
+            final TextView textView = textViews[i];
+            linearLayout.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View view, boolean b) {
+                    if(b) {
+                        ocultarTeclado(linearLayout);
+                        textView.setBackgroundColor(Color.CYAN);
+                    }else
+                        textView.setBackgroundColor(Color.TRANSPARENT);
+                }
+            });
+        }
+
         EditText[] cajasDeTexto = {edtActividadPrimaria, edtCIUPrimaria, edtActividadSecundaria1,
         edtActividadSecundaria2,edtCIUSecundaria1,edtCIUSecundaria2, edtEspecifiqueOrg};
-        RadioGroup[] radioGroups = {rgOrgEmpresa,rgSP41,rgSP42};
 
         for (int i = 0; i < cajasDeTexto.length; i++) {
             final EditText editText = cajasDeTexto[i];
@@ -121,7 +163,6 @@ public class Modulo1Fragment1 extends Fragment {
                 public void onFocusChange(View view, boolean conFocus) {
                     if(conFocus) {
                         editText.setBackgroundResource(R.drawable.caja_texto_enabled);
-                        mostrarTeclado();
                     }
                     else if(view.isEnabled()){
                         editText.setBackgroundResource(R.drawable.cajas_de_texto);
@@ -130,23 +171,13 @@ public class Modulo1Fragment1 extends Fragment {
             });
         }
 
-        for (int i = 0; i < radioGroups.length; i++) {
-            final RadioGroup radioGroup = radioGroups[i];
-            radioGroup.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                @Override
-                public void onFocusChange(View view, boolean conFocus) {
-                    if(conFocus) {
-                        ocultarTeclado(radioGroup);
-                        radioGroup.setBackgroundColor(Color.CYAN);
-                    }
-                    else if(view.isEnabled()){
-                        radioGroup.setBackgroundColor(Color.TRANSPARENT);
-                    }
-                }
-            });
-        }
-        lytFragment.requestFocus();
-
+        rgSP42.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(b) rgSP42.setBackgroundColor(Color.CYAN);
+                else rgSP42.setBackgroundColor(Color.TRANSPARENT);
+            }
+        });
         ckMismoInformante1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -157,7 +188,7 @@ public class Modulo1Fragment1 extends Fragment {
                     edtNombYApellidos1.setText("JULIO LAVADO");
                     spCargo1.setSelection(1);
                     edtNombYApellidos1.setEnabled(false);
-                    edtActividadPrimaria.requestFocus();
+                    lytP1.requestFocus();
                 }else{
                     edtNombYApellidos1.setText("");
                     spCargo1.setSelection(0);
@@ -182,20 +213,17 @@ public class Modulo1Fragment1 extends Fragment {
                 return false;
             }
         });
-
         edtNombYApellidos1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean conFocus) {
                 if(conFocus) {
                     edtNombYApellidos1.setBackgroundResource(R.drawable.caja_texto_enabled);
-                    mostrarTeclado();
                 }
                 else if(view.isEnabled()){
                     edtNombYApellidos1.setBackgroundResource(R.drawable.cajas_de_texto);
                 }
             }
         });
-
         lytFondoSpinner1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean conFocus) {
@@ -205,19 +233,6 @@ public class Modulo1Fragment1 extends Fragment {
                 }
                 else if(view.isEnabled()){
                     lytFondoSpinner1.setBackgroundResource(R.drawable.cajas_de_texto);
-                }
-            }
-        });
-        edtEspecifiqueCargo1.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
-        edtEspecifiqueCargo1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean conFocus) {
-                if(conFocus) {
-                    edtEspecifiqueCargo1.setBackgroundResource(R.drawable.caja_texto_enabled);
-                    mostrarTeclado();
-                }
-                else if(view.isEnabled()){
-                    edtEspecifiqueCargo1.setBackgroundResource(R.drawable.cajas_de_texto);
                 }
             }
         });
@@ -232,22 +247,50 @@ public class Modulo1Fragment1 extends Fragment {
                     case 3:break;
                     case 4:
                         edtEspecifiqueCargo1.setVisibility(View.VISIBLE);
+                        edtEspecifiqueCargo1.requestFocus();
                         break;
                 }
-                if(pos == 4) edtEspecifiqueCargo1.requestFocus();
-                else if (pos > 0 && pos <4)edtActividadPrimaria.requestFocus();
+                if (pos > 0 && pos <4)lytP1.requestFocus();
             }
-
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
+            public void onNothingSelected(AdapterView<?> adapterView) {}
+        });
+        edtEspecifiqueCargo1.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+        edtEspecifiqueCargo1.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
+                if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    ocultarTeclado(edtEspecifiqueCargo1);
+                    lytP1.requestFocus();
+                    return true;
+                }
+                return false;
+            }
+        });
+        edtEspecifiqueCargo1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean conFocus) {
+                if(conFocus) {
+                    edtEspecifiqueCargo1.setBackgroundResource(R.drawable.caja_texto_enabled);
+                }
+                else if(view.isEnabled()){
+                    edtEspecifiqueCargo1.setBackgroundResource(R.drawable.cajas_de_texto);
+                }
             }
         });
 
-        edtActividadPrimaria.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
-        edtCIUPrimaria.setTransformationMethod(new NumericKeyBoardTransformationMethod());
-        edtActividadSecundaria1.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
-        edtCIUSecundaria1.setTransformationMethod(new NumericKeyBoardTransformationMethod());
+
+        edtCIUPrimaria.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
+                if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    ocultarTeclado(edtActividadSecundaria1);
+                    lytP2.requestFocus();
+                    return true;
+                }
+                return false;
+            }
+        });
 
         edtCIUSecundaria1.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -255,8 +298,8 @@ public class Modulo1Fragment1 extends Fragment {
                 if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     if(ckNoSecundaria2.isChecked()){
-                        InputMethodManager mgr = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-                        rgOrgEmpresa.requestFocus();
+                        ocultarTeclado(edtActividadSecundaria1);
+                        lytP3.requestFocus();
                     }
                     return true;
                 }
@@ -268,7 +311,8 @@ public class Modulo1Fragment1 extends Fragment {
             public void onCheckedChanged(CompoundButton compoundButton, boolean checkeado) {
                 if(checkeado) {
                     lytActividadSec2.setVisibility(View.GONE);
-                    rgOrgEmpresa.requestFocus();
+                    ocultarTeclado(ckNoSecundaria2);
+                    lytP3.requestFocus();
                 } else {
                     lytActividadSec2.setVisibility(View.VISIBLE);
                     edtActividadSecundaria2.setText("");
@@ -284,7 +328,8 @@ public class Modulo1Fragment1 extends Fragment {
             public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
                 if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    rgOrgEmpresa.requestFocus();
+                    ocultarTeclado(edtActividadSecundaria2);
+                    lytP3.requestFocus();
                     return true;
                 }
                 return false;
@@ -308,7 +353,8 @@ public class Modulo1Fragment1 extends Fragment {
                         break;
                 }
                 if(i != R.id.mod1_p3_rb7){
-                    rgSP41.requestFocus();
+                    ocultarTeclado(rgOrgEmpresa);
+                    lytP4.requestFocus();
                 }
             }
         });
@@ -318,7 +364,8 @@ public class Modulo1Fragment1 extends Fragment {
             public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
                 if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    rgSP41.requestFocus();
+                    ocultarTeclado(edtEspecifiqueOrg);
+                    lytP4.requestFocus();
                     return true;
                 }
                 return false;
@@ -340,22 +387,23 @@ public class Modulo1Fragment1 extends Fragment {
         rgSP42.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                lytP5.requestFocus();
                 switch(i){
                     case R.id.mod1_p4_sp2_rb1:break;
                     case R.id.mod1_p4_sp2_rb2:break;
                 }
             }
         });
+
+        lytFragment.requestFocus();
+        edtActividadPrimaria.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+        edtCIUPrimaria.setTransformationMethod(new NumericKeyBoardTransformationMethod());
+        edtActividadSecundaria1.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+        edtCIUSecundaria1.setTransformationMethod(new NumericKeyBoardTransformationMethod());
     }
 
     public void ocultarTeclado(View view){
         InputMethodManager mgr = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         mgr.hideSoftInputFromWindow(view.getWindowToken(), 0);
-    }
-    public void mostrarTeclado(){
-        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-        if (!imm.isAcceptingText()) {
-            imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-        }
     }
 }

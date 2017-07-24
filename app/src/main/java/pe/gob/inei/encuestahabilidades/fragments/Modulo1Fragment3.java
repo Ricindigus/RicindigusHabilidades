@@ -18,6 +18,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import pe.gob.inei.encuestahabilidades.NumericKeyBoardTransformationMethod;
 import pe.gob.inei.encuestahabilidades.R;
@@ -27,7 +30,12 @@ import pe.gob.inei.encuestahabilidades.R;
  */
 public class Modulo1Fragment3 extends Fragment {
 
-    private EditText edtNEstablecimientos;
+    private LinearLayout lytP11;
+    private LinearLayout lytP12;
+
+    private TextView txtPregunta11;
+    private TextView txtPregunta12;
+
     private EditText edtAnio;
     private EditText edtMes;
     private EditText edtVia;
@@ -47,7 +55,7 @@ public class Modulo1Fragment3 extends Fragment {
     private LinearLayout lytEdit1;
     private LinearLayout lytEdit2;
 
-    private RadioGroup rgEstablecimientos;
+
     private RadioGroup rgAnio;
 
     private Spinner spTipoVia;
@@ -65,10 +73,14 @@ public class Modulo1Fragment3 extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_modulo1_fragment3, container, false);
 
-        rgEstablecimientos = (RadioGroup) rootView.findViewById(R.id.mod1_p10_rgEstablecimiento);
+        lytP11 = (LinearLayout) rootView.findViewById(R.id.mod1_p11_lyt);
+        lytP12 = (LinearLayout) rootView.findViewById(R.id.mod1_p12_lyt);
+
+        txtPregunta11 = (TextView) rootView.findViewById(R.id.mod1_p11_txtPregunta);
+        txtPregunta12 = (TextView) rootView.findViewById(R.id.mod1_p12_txtPregunta);
+
         rgAnio = (RadioGroup) rootView.findViewById(R.id.mod1_p11_rgAnio);
 
-        edtNEstablecimientos = (EditText) rootView.findViewById(R.id.mod1_p9_edtEstablecimientos);
         edtAnio = (EditText) rootView.findViewById(R.id.mod1_p11_edt1);
         edtMes = (EditText) rootView.findViewById(R.id.mod1_p11_edt2);
 
@@ -99,8 +111,25 @@ public class Modulo1Fragment3 extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        LinearLayout[] linearLayouts = {lytP11,lytP12};
+        TextView[] textViews = {txtPregunta11,txtPregunta12};
 
-        edtNEstablecimientos.setTransformationMethod(new NumericKeyBoardTransformationMethod());
+        for (int i = 0; i < linearLayouts.length; i++) {
+            final LinearLayout linearLayout = linearLayouts[i];
+            final TextView textView = textViews[i];
+            linearLayout.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View view, boolean b) {
+                    if(b) {
+                        ocultarTeclado(linearLayout);
+                        textView.setBackgroundColor(Color.CYAN);
+                    }
+                    else textView.setBackgroundColor(Color.TRANSPARENT);
+                }
+            });
+        }
+
+
         edtAnio.setTransformationMethod(new NumericKeyBoardTransformationMethod());
         edtMes.setTransformationMethod(new NumericKeyBoardTransformationMethod());
         edtVia.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
@@ -116,7 +145,7 @@ public class Modulo1Fragment3 extends Fragment {
         edtDepartamento.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
         edtEspecifique.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
 
-        EditText[] editTexts = {edtNEstablecimientos,edtAnio,edtMes, edtVia,edtPuerta,edtBlock,edtInterior,edtPiso, edtManzana,edtLote,edtKm,edtDistrito,
+        EditText[] editTexts = {edtAnio,edtMes, edtVia,edtPuerta,edtBlock,edtInterior,edtPiso, edtManzana,edtLote,edtKm,edtDistrito,
         edtProvincia,edtDepartamento,edtEspecifique};
 
         for (int i = 0; i < editTexts.length; i++) {
@@ -130,39 +159,7 @@ public class Modulo1Fragment3 extends Fragment {
             });
         }
 
-        edtNEstablecimientos.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
-                if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    ocultarTeclado(edtNEstablecimientos);
-                    rgEstablecimientos.requestFocus();
-                    return true;
-                }
-                return false;
-            }
-        });
 
-        rgEstablecimientos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-                switch (i){
-                    case R.id.mod1_p10_rbSi:
-                        break;
-                    case R.id.mod1_p10_rbNo:
-                        break;
-                }
-                rgAnio.requestFocus();
-            }
-        });
-
-        rgEstablecimientos.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if(b) rgEstablecimientos.setBackgroundColor(Color.CYAN);
-                else rgEstablecimientos.setBackgroundColor(Color.TRANSPARENT);
-            }
-        });
 
         rgAnio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -196,7 +193,7 @@ public class Modulo1Fragment3 extends Fragment {
                 if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     ocultarTeclado(edtAnio);
-                    lytFondoSpinner.requestFocus();
+                    lytP12.requestFocus();
                     return true;
                 }
                 return false;
@@ -209,7 +206,7 @@ public class Modulo1Fragment3 extends Fragment {
                 if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     ocultarTeclado(edtMes);
-                    lytFondoSpinner.requestFocus();
+                    lytP12.requestFocus();
                     return true;
                 }
                 return false;
