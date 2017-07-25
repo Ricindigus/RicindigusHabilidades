@@ -1,12 +1,9 @@
 package pe.gob.inei.encuestahabilidades.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -19,7 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -74,15 +70,11 @@ import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment7;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment8;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment9;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment1;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment10;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment2;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment3;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment4;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment5;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment6;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment7;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment8;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment9;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo9Fragment1;
 import pe.gob.inei.encuestahabilidades.fragments.VisitaFragment;
 

@@ -20,20 +20,21 @@
         android:textStyle="bold"
         android:gravity="center"
         android:text="Grandes grupos ocupacionales según CNO 2015"/>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
 
             <CheckBox
-                android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mod5_p1_sp1"
@@ -41,488 +42,455 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp1_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp1_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp2"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp2"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp2_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp2_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp3"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp3"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp3_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp3_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp4"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp4"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp4_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp4_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp5"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp5"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp5_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp5_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp6"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp6"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp6_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp6_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp7"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp7"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp7_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp7_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp8"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp8"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp8_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp8_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin10dp"
             android:layout_marginTop="1dp"
-            android:background="@drawable/cajas_de_texto">
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="@string/mod5_p1_sp9"
                 android:textSize="@dimen/textoSmall"
-                android:text="@string/mod5_p1_sp9"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:paddingLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mod5_p1_sp9_desc"/>
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp9_desc" />
+
             <LinearLayout
-                android:layout_marginTop="@dimen/margin15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin15dp"
                 android:background="@drawable/caja_texto_redonda"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:padding="@dimen/margin10dp">
+
                 <TextView
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/margin10dp"
                     android:gravity="center_vertical"
-                    android:text="N°  de Competentes"/>
+                    android:text="Elección" />
+
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cajas_de_texto"
                     android:inputType="numberPassword"
                     android:maxLength="5"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"
-                    android:layout_marginRight="30dp"/>
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/margin10dp"
-                    android:text="Porcentaje de competentes"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:maxLength="3"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:paddingLeft="5dp"
-                    android:background="@drawable/cajas_de_texto"/>
+                    android:paddingLeft="5dp" />
             </LinearLayout>
         </LinearLayout>
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/cajas_de_texto">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="Ingresa información en:"/>
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N° personas ocupadas"
+                android:layout_marginRight="5dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% personas ocupadas"/>
+        </RadioGroup>
+    </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

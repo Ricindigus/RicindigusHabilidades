@@ -59,15 +59,11 @@ import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment7;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment8;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment9;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment1;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment10;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment2;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment3;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment4;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment5;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment6;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment7;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment8;
-import pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment9;
 import pe.gob.inei.encuestahabilidades.fragments.Modulo9Fragment1;
 import pe.gob.inei.encuestahabilidades.fragments.VisitaFragment;
 

@@ -1115,12 +1115,12 @@
     <!--MODULO 8-->
 
     <string name="mod8_p1">1. ¿Se encuentra actualmente utilizando alguno de los siguientes ítems en el proceso que utiliza para producir sus bienes o servicios?</string>
-    <string name="mod8_p1_sp1">1.Inteligencia artificial</string>
-    <string name="mod8_p1_sp2">2.Aprendizaje automático</string>
-    <string name="mod8_p1_sp3">3.Robótica avanzada</string>
-    <string name="mod8_p1_sp4">4.Transporte automático</string>
-    <string name="mod8_p1_sp5">5.Manufactura avanzada</string>
-    <string name="mod8_p1_sp6">6.Producción con impresión en 3D</string>
+    <string name="mod8_p1_sp1">1.INTELIGENCIA ARTIFICIAL</string>
+    <string name="mod8_p1_sp2">2.APRENDIZAJE AUTOMÁTICO</string>
+    <string name="mod8_p1_sp3">3.ROBÓTICA AVANZADA</string>
+    <string name="mod8_p1_sp4">4.TRANSPORTE AUTÓNOMO</string>
+    <string name="mod8_p1_sp5">5.MANUFACTURA AVANZADA</string>
+    <string name="mod8_p1_sp6">6.PRODUCCIÓN CON IMPRESIÓN EN 3D</string>
     <string name="mod8_p1_sp0">Afectación</string>
     <string name="mod8_p1_op1">1.En gran medida</string>
     <string name="mod8_p1_op2">2.De forma moderada</string>

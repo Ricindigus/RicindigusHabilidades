@@ -83,6 +83,7 @@
             <include layout="@layout/modulo9_pregunta1"/>
             <include layout="@layout/modulo9_pregunta2"/>
             <include layout="@layout/modulo9_pregunta3"/>
+            <include layout="@layout/layout_observaciones"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
